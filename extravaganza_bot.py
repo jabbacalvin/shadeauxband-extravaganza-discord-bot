@@ -162,6 +162,38 @@ team_total_points = {team: 0 for team in team_roster}
 logging.basicConfig(filename='bot_logs.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
+@client.tree.command(name="boss_drops_all", description="Shows all boss drops and points in embeds (admin only).")
+async def boss_drops_all(interaction: discord.Interaction):
+    logging.info(f"User {interaction.user.name} used /boss_drops_all")
+    if interaction.user.name not in ADMINS: #assuming you have ADMINS defined
+        return await interaction.response.send_message("You do not have permission to use this command.", ephemeral=True)
+
+    embeds = []
+    for boss_name, drops in boss_drops.items():
+        embed = discord.Embed(title=f"{boss_name} Drops", color=discord.Color.blue())
+
+        for drop_info in drops:
+            drop_name = drop_info["drop"]
+            points = drop_info["points"]
+            embed.add_field(name=drop_name, value=f"Points: {points}", inline=False)
+
+            if len(embed.fields) >= 25:
+              embed.add_field(name="Warning", value=f"Too many drops for {boss_name}. Some drops may not be shown.", inline=False)
+              break #stop adding fields.
+
+        embeds.append(embed)
+
+    if not embeds:
+        return await interaction.response.send_message("No boss drops found.", ephemeral=True)
+
+    # Send embeds in batches of 10
+    for i in range(0, len(embeds), 10):
+        batch = embeds[i:i + 10]
+        if i == 0:
+            await interaction.response.send_message(embeds=batch, ephemeral=True)
+        else:
+            await interaction.followup.send(embeds=batch, ephemeral=True)
+
 @client.tree.command(name="boss_drops", description="View drops and points for a boss.")
 @app_commands.autocomplete(boss_name=boss_autocomplete)
 async def boss_drops_command(interaction: discord.Interaction, boss_name: str):
