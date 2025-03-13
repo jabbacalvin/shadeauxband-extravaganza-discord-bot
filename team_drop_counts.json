@@ -23,11 +23,19 @@
         },
         "Vorkath": {
             "Vorkath Head": 1
+        },
+        "Araxxor": {
+            "Noxious Halberd Piece": 2,
+            "Araxyte Fang": 1,
+            "Araxyte Head": 1
         }
     },
     "Team Bandos": {
         "Tombs of Amascut": {
             "Osmumten's Fang": 1
+        },
+        "The Leviathan": {
+            "Awakener's Orb": 1
         }
     },
     "Team Saradomin": {
@@ -38,8 +46,14 @@
             "Archers Ring": 1
         },
         "Grotesque Guardians": {
-            "Granite Maul": 1,
+            "Granite Maul": 2,
             "Granite Gloves": 1
+        },
+        "Alchemical Hydra": {
+            "Alchemical Hydra Heads": 2
+        },
+        "Vardorvis": {
+            "Awakener's Orb": 1
         }
     },
     "Team Zamorak": {
@@ -64,6 +78,22 @@
         },
         "Barrows Chests": {
             "Any Unique": 2
+        },
+        "Kree'arra": {
+            "Armadyl Hilt": 1,
+            "Pet": 1
+        },
+        "Sarachnis": {
+            "Pet": 1
+        },
+        "The Leviathan": {
+            "Awakener's Orb": 1
+        },
+        "Zulrah": {
+            "Uncut Onyx": 1
+        },
+        "K'ril Tsutsaroth": {
+            "Zamorakian Spear": 1
         }
     },
     "Team Zaros": {
