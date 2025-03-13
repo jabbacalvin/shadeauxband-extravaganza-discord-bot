@@ -1,0 +1,441 @@
+{
+  "Abyssal Sire": [
+    { "drop": "Bludgeon Piece", "points": 460 },
+    { "drop": "Abyssal Dagger", "points": 1090 },
+    { "drop": "Abyssal Whip", "points": 2370 },
+    { "drop": "Abyssal Head", "points": 2840 },
+    { "drop": "Jar", "points": 2190 },
+    { "drop": "Pet", "points": 5690 }
+  ],
+  "Alchemical Hydra": [
+    { "drop": "Brimstone Ring Piece", "points": 600 },
+    { "drop": "Hydra Tail", "points": 1710 },
+    { "drop": "Hydra Leather", "points": 1710 },
+    { "drop": "Hydra's Claw", "points": 3340 },
+    { "drop": "Alchemical Hydra Heads", "points": 850 },
+    { "drop": "Jar", "points": 6670 },
+    { "drop": "Pet", "points": 10000 }
+  ],
+  "Amoxliatl": [
+    { "drop": "Glacial Temotli", "points": 140 },
+    { "drop": "Pendant of Ates", "points": 40 },
+    { "drop": "Pet", "points": 4290 }
+  ],
+  "Araxxor": [
+    { "drop": "Noxious Halberd Piece", "points": 540 },
+    { "drop": "Araxyte Head", "points": 680 },
+    { "drop": "Araxyte Fang", "points": 1620 },
+    { "drop": "Jar", "points": 4050 },
+    { "drop": "Pet", "points": 8110 }
+  ],
+  "Artio": [
+    { "drop": "Claws of Callisto", "points": 1030 },
+    { "drop": "Dragon Pickaxe", "points": 600 },
+    { "drop": "Dragon 2h", "points": 600 },
+    { "drop": "Voidwaker Hilt", "points": 1520 },
+    { "drop": "Tyrannical Ring", "points": 1190 },
+    { "drop": "Pet", "points": 4670 }
+  ],
+  "Barrows Chests": [{ "drop": "Any Unique", "points": 270 }],
+  "Callisto": [
+    { "drop": "Claws of Callisto", "points": 230 },
+    { "drop": "Dragon Pickaxe", "points": 300 },
+    { "drop": "Dragon 2h", "points": 300 },
+    { "drop": "Voidwaker Hilt", "points": 420 },
+    { "drop": "Tyrannical Ring", "points": 600 },
+    { "drop": "Pet", "points": 1760 }
+  ],
+  "Calvar'ion": [
+    { "drop": "Skull of Vet'ion", "points": 1120 },
+    { "drop": "Dragon 2H Sword", "points": 650 },
+    { "drop": "Dragon Pickaxe", "points": 650 },
+    { "drop": "Voidwaker Blade", "points": 1660 },
+    { "drop": "Ring of the Gods", "points": 1300 },
+    { "drop": "Pet", "points": 5090 }
+  ],
+  "Cerberus": [
+    { "drop": "Primordial Crystal", "points": 790 },
+    { "drop": "Pegasian Crystal", "points": 790 },
+    { "drop": "Eternal Crystal", "points": 790 },
+    { "drop": "Smouldering Stone", "points": 790 },
+    { "drop": "Jar", "points": 3080 },
+    { "drop": "Pet", "points": 4620 }
+  ],
+  "Chambers of Xeric": [
+    { "drop": "Dexterous Prayer Scroll", "points": 2130 },
+    { "drop": "Arcane Prayer Scroll", "points": 2130 },
+    { "drop": "Twisted Buckler", "points": 10660 },
+    { "drop": "Dragon Hunter Crossbow", "points": 10660 },
+    { "drop": "Dinh's Bulwark", "points": 14210 },
+    { "drop": "Ancestral Hat", "points": 14210 },
+    { "drop": "Ancestral Robe Top", "points": 14210 },
+    { "drop": "Ancestral Robe Bottom", "points": 14210 },
+    { "drop": "Dragon Claws", "points": 14210 },
+    { "drop": "Elder Maul", "points": 21320 },
+    { "drop": "Kodai Insignia", "points": 21320 },
+    { "drop": "Twisted Bow", "points": 21320 },
+    { "drop": "Onyx", "points": 12860 },
+    { "drop": "Pet", "points": 32750 }
+  ],
+  "Chambers of Xeric (CM)": [
+    { "drop": "Dexterous Prayer Scroll", "points": 1730 },
+    { "drop": "Arcane Prayer Scroll", "points": 1730 },
+    { "drop": "Twisted Buckler", "points": 8630 },
+    { "drop": "Dragon Hunter Crossbow", "points": 8630 },
+    { "drop": "Dinh's Bulwark", "points": 11500 },
+    { "drop": "Ancestral Hat", "points": 11500 },
+    { "drop": "Ancestral Robe Top", "points": 11500 },
+    { "drop": "Ancestral Robe Bottom", "points": 11500 },
+    { "drop": "Dragon Claws", "points": 11500 },
+    { "drop": "Elder Maul", "points": 17250 },
+    { "drop": "Kodai Insignia", "points": 17250 },
+    { "drop": "Twisted Bow", "points": 17250 },
+    { "drop": "Onyx", "points": 12860 },
+    { "drop": "Twisted Kit", "points": 250 },
+    { "drop": "Metamorphic Dust", "points": 13330 },
+    { "drop": "Pet", "points": 26500 }
+  ],
+  "Chambers of Xeric (Scaled)": [
+    { "drop": "Dexterous Prayer Scroll", "points": 1065 },
+    { "drop": "Arcane Prayer Scroll", "points": 1065 },
+    { "drop": "Twisted Buckler", "points": 5330 },
+    { "drop": "Dragon Hunter Crossbow", "points": 5330 },
+    { "drop": "Dinh's Bulwark", "points": 7105 },
+    { "drop": "Ancestral Hat", "points": 7105 },
+    { "drop": "Ancestral Robe Top", "points": 7105 },
+    { "drop": "Ancestral Robe Bottom", "points": 7105 },
+    { "drop": "Dragon Claws", "points": 7105 },
+    { "drop": "Elder Maul", "points": 10660 },
+    { "drop": "Kodai Insignia", "points": 10660 },
+    { "drop": "Twisted Bow", "points": 10660 },
+    { "drop": "Onyx", "points": 12860 },
+    { "drop": "Pet", "points": 16375 }
+  ],
+  "Chaos Elemental": [
+    { "drop": "Dragon 2H Sword", "points": 50 },
+    { "drop": "Dragon Pickaxe", "points": 210 },
+    { "drop": "Pet", "points": 250 }
+  ],
+  "Chaos Fanatic": [
+    { "drop": "Odium Shard 1", "points": 270 },
+    { "drop": "Malediction Shard 1", "points": 270 },
+    { "drop": "Pet", "points": 1000 }
+  ],
+  "Commander Zilyana": [
+    { "drop": "Saradomin Sword", "points": 220 },
+    { "drop": "Saradomin's Light", "points": 440 },
+    { "drop": "Armadyl Crossbow", "points": 880 },
+    { "drop": "Saradomin Hilt", "points": 880 },
+    { "drop": "Any Godsword Shard", "points": 1310 },
+    { "drop": "Pet", "points": 8620 }
+  ],
+  "Corporeal Beast": [
+    { "drop": "Spirit Shield", "points": 110 },
+    { "drop": "Holy Elixir", "points": 280 },
+    { "drop": "Spectral Sigil", "points": 2280 },
+    { "drop": "Arcane Sigil", "points": 2280 },
+    { "drop": "Elysian Sigil", "points": 6825 },
+    { "drop": "Jar", "points": 1670 },
+    { "drop": "Pet", "points": 8330 }
+  ],
+  "Crazy Archaeologist": [
+    { "drop": "Odium Shard 2", "points": 340 },
+    { "drop": "Malediction Shard 2", "points": 340 },
+    { "drop": "Fedora", "points": 170 }
+  ],
+  "Dagannoth Kings": [
+    { "drop": "Warrior Ring", "points": 120 },
+    { "drop": "Berserker Ring", "points": 120 },
+    { "drop": "Archers Ring", "points": 120 },
+    { "drop": "Seers Ring", "points": 120 },
+    { "drop": "Dragon Axe", "points": 120 },
+    { "drop": "Seercull", "points": 120 },
+    { "drop": "Mud Battlestaff", "points": 120 },
+    { "drop": "Pet", "points": 4760 }
+  ],
+  "Demonic Gorillas": [
+    { "drop": "Zenyte", "points": 480 },
+    { "drop": "Ballista Limbs", "points": 800 },
+    { "drop": "Ballista Spring", "points": 800 },
+    { "drop": "Light Frame", "points": 1210 },
+    { "drop": "Heavy Frame", "points": 2420 },
+    { "drop": "Monkey Tail", "points": 2420 }
+  ],
+  "Duke Sucellus": [
+    { "drop": "Awakener's Orb", "points": 160 },
+    { "drop": "Chromium Ingot", "points": 800 },
+    { "drop": "Magus Vestige", "points": 2400 },
+    { "drop": "Eye of the Duke", "points": 2400 },
+    { "drop": "Virtus Mask", "points": 7200 },
+    { "drop": "Virtus Robe Top", "points": 7200 },
+    { "drop": "Virtus Robe Bottom", "points": 7200 },
+    { "drop": "Pet", "points": 8330 }
+  ],
+  "Fortis Colosseum": [
+    { "drop": "Echo Crystal", "points": 420 },
+    { "drop": "Sunfire Fanatic Helm", "points": 960 },
+    { "drop": "Sunfire Fanatic Cuirass", "points": 960 },
+    { "drop": "Sunfire Fanatic Chausses", "points": 960 },
+    { "drop": "Tonalztics of Ralos", "points": 3330 },
+    { "drop": "Uncut Onyx", "points": 1750 },
+    { "drop": "Pet (Wave 12 Only, No Gambles)", "points": 8000 }
+  ],
+  "General Graardor": [
+    { "drop": "Bandos Chestplate", "points": 660 },
+    { "drop": "Bandos Tassets", "points": 660 },
+    { "drop": "Bandos Boots", "points": 660 },
+    { "drop": "Bandos Hilt", "points": 880 },
+    { "drop": "Any Godsword Shard", "points": 1310 },
+    { "drop": "Pet", "points": 8620 }
+  ],
+  "Giant Mole": [{ "drop": "Pet", "points": 2400 }],
+  "Grotesque Guardians": [
+    { "drop": "Granite Maul", "points": 340 },
+    { "drop": "Granite Gloves", "points": 680 },
+    { "drop": "Granite Ring", "points": 680 },
+    { "drop": "Granite Hammer", "points": 1010 },
+    { "drop": "Black Tourmaline Core", "points": 1350 },
+    { "drop": "Jar", "points": 13510 },
+    { "drop": "Pet", "points": 8110 }
+  ],
+  "K'ril Tsutsaroth": [
+    { "drop": "Zamorakian Spear", "points": 200 },
+    { "drop": "Steam Battlestaff", "points": 200 },
+    { "drop": "Staff of the Dead", "points": 780 },
+    { "drop": "Zamorak Hilt", "points": 780 },
+    { "drop": "Any Godsword Shard", "points": 1170 },
+    { "drop": "Pet", "points": 7690 }
+  ],
+  "Kalphite Queen": [
+    { "drop": "KQ Head", "points": 230 },
+    { "drop": "Dragon Chainbody", "points": 230 },
+    { "drop": "Dragon 2H Sword", "points": 470 },
+    { "drop": "Dragon Pickaxe", "points": 730 },
+    { "drop": "Jar", "points": 3640 },
+    { "drop": "Pet", "points": 5450 }
+  ],
+  "King Black Dragon": [
+    { "drop": "KBD Heads", "points": 100 },
+    { "drop": "Dragon Pickaxe", "points": 770 },
+    { "drop": "Draconic Visage", "points": 3850 },
+    { "drop": "Pet", "points": 2310 }
+  ],
+  "Kraken": [
+    { "drop": "Kraken Tentacle", "points": 400 },
+    { "drop": "Trident of the Seas", "points": 510 },
+    { "drop": "Jar", "points": 1000 },
+    { "drop": "Pet", "points": 3000 }
+  ],
+  "Kree'arra": [
+    { "drop": "Armadyl Helmet", "points": 950 },
+    { "drop": "Armadyl Chestplate", "points": 950 },
+    { "drop": "Armadyl Chainskirt", "points": 950 },
+    { "drop": "Armadyl Hilt", "points": 1270 },
+    { "drop": "Any Godsword Shard", "points": 1910 },
+    { "drop": "Pet", "points": 12500 }
+  ],
+  "Moons of Peril": [{ "drop": "Any Unique", "points": 410 }],
+  "Nex": [
+    { "drop": "Zaryte Vambraces", "points": 730 },
+    { "drop": "Nihil Horn", "points": 1100 },
+    { "drop": "Torva Full Helm", "points": 1100 },
+    { "drop": "Torva Platebody", "points": 1100 },
+    { "drop": "Torva Platelegs", "points": 1100 },
+    { "drop": "Ancient Hilt", "points": 2200 },
+    { "drop": "Pet", "points": 2130 }
+  ],
+  "Phantom Muspah": [
+    { "drop": "Ancient Icon", "points": 190 },
+    { "drop": "Venator Shard", "points": 380 },
+    { "drop": "Pet", "points": 9620 }
+  ],
+  "Phosani's Nightmare": [
+    { "drop": "Nightmare Staff", "points": 7610 },
+    { "drop": "Inquisitor's Great Helm", "points": 10000 },
+    { "drop": "Inquisitor's Hauberk", "points": 10000 },
+    { "drop": "Inquisitor's Plateskirt", "points": 10000 },
+    { "drop": "Inquisitor's Mace", "points": 17860 },
+    { "drop": "Volatile Orb", "points": 22860 },
+    { "drop": "Harmonised Orb", "points": 22860 },
+    { "drop": "Eldritch Orb", "points": 22860 },
+    { "drop": "Jar", "points": 57140 },
+    { "drop": "Pet", "points": 20000 }
+  ],
+  "Royal Titans": [
+    { "drop": "Giantsoul Amulet", "points": 30 },
+    { "drop": "Ice Element Staff Crown", "points": 150 },
+    { "drop": "Fire Element Staff Crown", "points": 150 },
+    { "drop": "Pet", "points": 6000 }
+  ],
+  "Sarachnis": [
+    { "drop": "Sarachnis Cudgel", "points": 480 },
+    { "drop": "Jar", "points": 2500 },
+    { "drop": "Pet", "points": 3750 }
+  ],
+  "Scorpia": [
+    { "drop": "Odium Shard 3", "points": 200 },
+    { "drop": "Malediction Shard 3", "points": 200 },
+    { "drop": "Dragon 2H Sword", "points": 100 },
+    { "drop": "Pet", "points": 1550 }
+  ],
+  "Scurrius": [
+    { "drop": "Scurrius' Spine", "points": 40 },
+    { "drop": "Pet", "points": 3530 }
+  ],
+  "Spindel": [
+    { "drop": "Fangs of Venenatis", "points": 1120 },
+    { "drop": "Dragon 2H Sword", "points": 650 },
+    { "drop": "Dragon Pickaxe", "points": 650 },
+    { "drop": "Voidwaker Gem", "points": 1660 },
+    { "drop": "Treasonous Ring", "points": 1300 },
+    { "drop": "Pet", "points": 5090 }
+  ],
+  "The Gauntlet": [
+    { "drop": "Crystal Weapon Seed", "points": 500 },
+    { "drop": "Crystal Armour Seed", "points": 500 },
+    { "drop": "Enhanced Crystal Weapon Seed", "points": 4000 },
+    { "drop": "Pet", "points": 8000 }
+  ],
+  "The Hueycoatl": [
+    { "drop": "Dragon Hunter Wand", "points": 1040 },
+    { "drop": "Tome of Earth", "points": 460 },
+    { "drop": "Hueycoatl Hide", "points": 170 },
+    { "drop": "Pet", "points": 2000 }
+  ],
+  "The Leviathan": [
+    { "drop": "Awakener's Orb", "points": 180 },
+    { "drop": "Chromium Ingot", "points": 850 },
+    { "drop": "Venator Vestige", "points": 2560 },
+    { "drop": "Leviathan's Lure", "points": 2560 },
+    { "drop": "Virtus Mask", "points": 7680 },
+    { "drop": "Virtus Robe Top", "points": 7680 },
+    { "drop": "Virtus Robe Bottom", "points": 7680 },
+    { "drop": "Pet", "points": 8330 }
+  ],
+  "The Nightmare": [
+    { "drop": "Nightmare Staff", "points": 2140 },
+    { "drop": "Inquisitor's Great Helm", "points": 3000 },
+    { "drop": "Inquisitor's Hauberk", "points": 3000 },
+    { "drop": "Inquisitor's Plateskirt", "points": 3000 },
+    { "drop": "Inquisitor's Mace", "points": 5360 },
+    { "drop": "Volatile Orb", "points": 6860 },
+    { "drop": "Harmonised Orb", "points": 6860 },
+    { "drop": "Eldritch Orb", "points": 6860 },
+    { "drop": "Jar", "points": 13570 },
+    { "drop": "Pet", "points": 5710 }
+  ],
+  "The Whisperer": [
+    { "drop": "Awakener's Orb", "points": 160 },
+    { "drop": "Chromium Ingot", "points": 810 },
+    { "drop": "Bellator Vestige", "points": 2430 },
+    { "drop": "Siren's Staff", "points": 2430 },
+    { "drop": "Virtus Mask", "points": 7310 },
+    { "drop": "Virtus Robe Top", "points": 7310 },
+    { "drop": "Virtus Robe Bottom", "points": 7310 },
+    { "drop": "Pet", "points": 9520 }
+  ],
+  "Theatre of Blood": [
+    { "drop": "Avernic Defender Hilt", "points": 2700 },
+    { "drop": "Ghrazi Rapier", "points": 10810 },
+    { "drop": "Sanguinesti Staff", "points": 10810 },
+    { "drop": "Justiciar Faceguard", "points": 10810 },
+    { "drop": "Justiciar Chestguard", "points": 10810 },
+    { "drop": "Justiciar Legguards", "points": 10810 },
+    { "drop": "Scythe of Vitur", "points": 21610 },
+    { "drop": "Pet", "points": 20310 }
+  ],
+  "Theatre of Blood (HMT)": [
+    { "drop": "Avernic Defender Hilt", "points": 2640 },
+    { "drop": "Ghrazi Rapier", "points": 9240 },
+    { "drop": "Sanguinesti Staff", "points": 9240 },
+    { "drop": "Justiciar Faceguard", "points": 9240 },
+    { "drop": "Justiciar Chestguard", "points": 9240 },
+    { "drop": "Justiciar Legguards", "points": 9240 },
+    { "drop": "Scythe of Vitur", "points": 18480 },
+    { "drop": "Holy Ornament Kit", "points": 3330 },
+    { "drop": "Sanguine Ornament Kit", "points": 5000 },
+    { "drop": "Sanguine Dust", "points": 9170 },
+    { "drop": "Pet", "points": 16670 }
+  ],
+  "Thermonuclear Smoke Devil": [
+    { "drop": "Occult Necklace", "points": 230 },
+    { "drop": "Smoke Battlestaff", "points": 340 },
+    { "drop": "Dragon Chainbody", "points": 1330 },
+    { "drop": "Jar", "points": 1330 },
+    { "drop": "Pet", "points": 2000 }
+  ],
+  "Tombs of Amascut": [
+    { "drop": "Osmumten's Fang", "points": 3100 },
+    { "drop": "Lightbearer", "points": 3100 },
+    { "drop": "Elidinis' Ward", "points": 7240 },
+    { "drop": "Masori Mask", "points": 10860 },
+    { "drop": "Masori Body", "points": 10860 },
+    { "drop": "Masori Chaps", "points": 10860 },
+    { "drop": "Tumeken's Shadow", "points": 21720 },
+    { "drop": "Pet", "points": 28800 }
+  ],
+  "Tombs of Amascut (Expert)": [
+    { "drop": "Osmumten's Fang", "points": 1270 },
+    { "drop": "Lightbearer", "points": 1270 },
+    { "drop": "Elidinis' Ward", "points": 2950 },
+    { "drop": "Masori Mask", "points": 4430 },
+    { "drop": "Masori Body", "points": 4430 },
+    { "drop": "Masori Chaps", "points": 4430 },
+    { "drop": "Tumeken's Shadow", "points": 8860 },
+    { "drop": "Pet", "points": 10340 }
+  ],
+  "Tormented Demons": [
+    { "drop": "Burning Claw", "points": 910 },
+    { "drop": "Tormented Synapse", "points": 910 }
+  ],
+  "Vardorvis": [
+    { "drop": "Awakener's Orb", "points": 220 },
+    { "drop": "Chromium Ingot", "points": 980 },
+    { "drop": "Ultor Vestige", "points": 2940 },
+    { "drop": "Executioner's Axe Head", "points": 2940 },
+    { "drop": "Virtus Mask", "points": 8820 },
+    { "drop": "Virtus Robe Top", "points": 8820 },
+    { "drop": "Virtus Robe Bottom", "points": 8820 },
+    { "drop": "Pet", "points": 8110 }
+  ],
+  "Venenatis": [
+    { "drop": "Fangs of Venenatis", "points": 490 },
+    { "drop": "Dragon 2H Sword", "points": 640 },
+    { "drop": "Dragon Pickaxe", "points": 640 },
+    { "drop": "Voidwaker Gem", "points": 900 },
+    { "drop": "Treasonous Ring", "points": 1280 },
+    { "drop": "Pet", "points": 3750 }
+  ],
+  "Vet'ion": [
+    { "drop": "Skull of Vet'ion", "points": 390 },
+    { "drop": "Dragon 2H Sword", "points": 510 },
+    { "drop": "Dragon Pickaxe", "points": 510 },
+    { "drop": "Voidwaker Blade", "points": 720 },
+    { "drop": "Ring of the Gods", "points": 1020 },
+    { "drop": "Pet", "points": 3000 }
+  ],
+  "Vorkath": [
+    { "drop": "Vorkath Head", "points": 150 },
+    { "drop": "Dragonbone Necklace", "points": 2940 },
+    { "drop": "Draconic Visage", "points": 14700 },
+    { "drop": "Skeletal Visage", "points": 14700 },
+    { "drop": "Jar", "points": 8820 },
+    { "drop": "Pet", "points": 8820 }
+  ],
+  "Vyrewatch Sentinels": [{ "drop": "Blood Shard", "points": 1670 }],
+  "Zalcano": [
+    { "drop": "Crystal Tool Seed", "points": 1580 },
+    { "drop": "Zalcano Shard", "points": 5770 },
+    { "drop": "Pet", "points": 17310 }
+  ],
+  "Zulrah": [
+    { "drop": "Tanzanite Fang", "points": 1160 },
+    { "drop": "Magic Fang", "points": 1160 },
+    { "drop": "Serpentine Visage", "points": 1160 },
+    { "drop": "Uncut Onyx", "points": 1160 },
+    { "drop": "Tanzanite Mutagen", "points": 14890 },
+    { "drop": "Magma Mutagen", "points": 14890 },
+    { "drop": "Jar", "points": 6820 },
+    { "drop": "Pet", "points": 9090 }
+  ]
+}

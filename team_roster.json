@@ -1,0 +1,40 @@
+{
+  "Team Armadyl": [
+    { "discord_user": "titaniumbutter", "ign": "OvO_Izzy", "role": "leader" },
+    { "discord_user": "pauli_225", "ign": "Deltaman12", "role": "member" },
+    { "discord_user": ".eddiecat", "ign": "Lil Mr Eddie", "role": "member" },
+    { "discord_user": "ghostofmozart730", "ign": "Mozart73", "role": "member" }
+  ],
+  "Team Bandos": [
+    { "discord_user": "hotshot_chris", "ign": "Chris_Marko", "role": "leader" },
+    {
+      "discord_user": "luketheduke09",
+      "ign": "ligma weewee",
+      "role": "member"
+    },
+    { "discord_user": "bob0_o", "ign": "ilIBoBIli", "role": "member" },
+    { "discord_user": "ravenblacklac", "ign": "Porkless Pig", "role": "member" }
+  ],
+  "Team Saradomin": [
+    { "discord_user": "rs07noob", "ign": "3hit Murzyn", "role": "leader" },
+    {
+      "discord_user": "bosslikejordz97",
+      "ign": "BossJordz97",
+      "role": "member"
+    },
+    { "discord_user": "iblametruth", "ign": "Jino", "role": "member" },
+    { "discord_user": "phat_oo", "ign": "FearlessChkn", "role": "member" }
+  ],
+  "Team Zamorak": [
+    { "discord_user": "dufwha", "ign": "Dufwha", "role": "leader" },
+    { "discord_user": "marc07733", "ign": "Tac Maniac", "role": "member" },
+    { "discord_user": "sebii5", "ign": "Aluzion", "role": "member" },
+    { "discord_user": "esco33", "ign": "I Like Los3r", "role": "member" }
+  ],
+  "Team Zaros": [
+    { "discord_user": "begousdigous", "ign": "biggusdigous", "role": "leader" },
+    { "discord_user": "gu3swho", "ign": "GabeDaGr3at", "role": "member" },
+    { "discord_user": "announcez", "ign": "Simple Skunk", "role": "member" },
+    { "discord_user": "beeflesscow", "ign": "Beefless Cow", "role": "member" }
+  ]
+}
