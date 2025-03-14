@@ -529,14 +529,14 @@ async def recalculate_points(interaction: discord.Interaction):
 
                             if boss_name == "Barrows Chests" or boss_name == "Moons of Peril":
                                 if count > 4:
-                                    point_value /= 2 
-                                team_total_points[team] += point_value * count
+                                    team_total_points[team] += (4 * point_value) + ((count - 4) * (point_value / 2))
+                                else:
+                                    team_total_points[team] += count * point_value
                             else:
                                 if count > 1:
-                                    point_value /= 2 
-                                team_total_points[team] += original_point_value * 1
-                                if count > 1:
-                                    team_total_points[team] += point_value * (count - 1)
+                                    team_total_points[team] += point_value + ((count -1) * (point_value / 2))
+                                else:
+                                    team_total_points[team] += count * point_value
                             break
     save_data()
     await interaction.response.send_message("Team total points recalculated.", ephemeral=True)
