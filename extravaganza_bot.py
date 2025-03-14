@@ -22,9 +22,21 @@ team_colors = {
     "Team Zaros": discord.Color(0x4d0084),
 }
 
-with open("drops.json", "r", encoding="utf-8") as drops_file, open("team_roster.json", "r", encoding="utf-8") as roster_file:
-    boss_drops = json.load(drops_file)
-    team_roster = json.load(roster_file)
+try:
+    with open("team_data.json", "r", encoding="utf-8") as f:
+        team_data = json.load(f)
+except FileNotFoundError:
+    team_data = {}
+
+def save_team_data():
+    with open("team_data.json", "w", encoding="utf-8") as f:
+        json.dump(team_data, f, indent=4)
+
+try: 
+    with open("drops.json", "r", encoding="utf-8") as drops_file:
+        boss_drops = json.load(drops_file)
+except FileNotFoundError:
+    boss_drops = {}
 
 def save_data():
     with open("team_drop_counts.json", "w", encoding="utf-8") as f:
@@ -40,8 +52,8 @@ def load_data():
         with open("team_total_points.json", "r", encoding="utf-8") as f:
             team_total_points = json.load(f)
     except FileNotFoundError:
-        team_drop_counts = {team: {} for team in team_roster}
-        team_total_points = {team: 0 for team in team_roster}
+        team_drop_counts = {team: {} for team in team_data}
+        team_total_points = {team: 0 for team in team_data}
 
 class MyClient(commands.Bot):
     def __init__(self, *args, **kwargs):
@@ -65,7 +77,7 @@ class MyClient(commands.Bot):
 
             for team, points in sorted_teams:
                 points_display = int(points) if isinstance(points, (int, float)) and points.is_integer() else points
-                team_color = team_colors.get(team, discord.Color.default())
+                team_color = discord.Color(int(team_data[team]["color"], 16)) if team in team_data else discord.Color.default()
 
                 embed = discord.Embed(
                     description=f"**{team}:** {points_display} points",
@@ -95,7 +107,7 @@ class MyClient(commands.Bot):
                 plt.figure(figsize=(10, 6))
 
                 colors = [
-                    tuple(c / 255 for c in team_colors.get(team, discord.Color.default()).to_rgb())
+                    tuple(c / 255 for c in discord.Color(int(team_data[team]["color"], 16)).to_rgb()) if team in team_data else discord.Color.default().to_rgb()
                     for team in teams
                 ]
 
@@ -153,16 +165,59 @@ async def team_autocomplete(
 ) -> list[app_commands.Choice[str]]:
     suggestions = [
         app_commands.Choice(name=team, value=team)
-        for team in team_roster
+        for team in team_data
         if current.lower() in team.lower()
     ]
     return suggestions[:25]
 
-team_drop_counts = {team: {} for team in team_roster}
-team_total_points = {team: 0 for team in team_roster}
+team_drop_counts = {team: {} for team in team_data}
+team_total_points = {team: 0 for team in team_data}
 
 logging.basicConfig(filename='bot_logs.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
+
+@client.tree.command(name="create_team", description="Create a new team (admin only).")
+async def create_team(interaction: discord.Interaction, team_name: str, color_hex: str, leader: discord.Member, members: str):
+    logging.info(f"Admin {interaction.user.name} used /create_team: team={team_name}, color={color_hex}, leader={leader.name}, members={members}")
+    if interaction.user.name not in ADMINS:
+        return await interaction.response.send_message("You do not have permission to use this command.", ephemeral=True)
+
+    if team_name in team_data:
+        return await interaction.response.send_message(f"Team '{team_name}' already exists.", ephemeral=True)
+
+    try:
+        discord.Color(int(color_hex, 16))
+    except ValueError:
+        return await interaction.response.send_message("Invalid color hex code.", ephemeral=True)
+
+    team_data[team_name] = {
+        "color": color_hex,
+        "leader": leader.id,
+        "members": {}
+    }
+
+    member_list = [member.strip() for member in members.split(",")]
+
+    async def ask_ign(member_name):
+        await interaction.followup.send(f"What is the IGN for {member_name}?", ephemeral=True)
+
+        def check(message):
+            return message.author == interaction.user and message.channel == interaction.channel
+
+        try:
+            message = await client.wait_for('message', timeout=60.0, check=check)
+            return message.content
+        except asyncio.TimeoutError:
+            await interaction.followup.send(f"Timeout: No IGN provided for {member_name}.", ephemeral=True)
+            return None
+
+    for member_name in member_list:
+        ign = await ask_ign(member_name)
+        if ign:
+            team_data[team_name]["members"][member_name] = ign
+
+    save_team_data()
+    await interaction.response.send_message(f"Team '{team_name}' created.", ephemeral=True)
 
 @client.tree.command(name="boss_drops_all", description="Shows all boss drops and points in embeds (admin only).")
 async def boss_drops_all(interaction: discord.Interaction):
@@ -220,7 +275,7 @@ async def drop(interaction: discord.Interaction, boss_name: str, drop_name: str)
     member_id = str(interaction.user.name)
 
     team_found = None
-    for team, members in team_roster.items():
+    for team, members in team_data.items():
         for member in members:
             if member["discord_user"] == member_id:
                 team_found = team
@@ -280,7 +335,7 @@ async def drop_admin(interaction: discord.Interaction, team_name: str, boss_name
     if interaction.user.name not in ADMINS:
         return await interaction.response.send_message("You do not have permission to use this command.", ephemeral=True)
 
-    if team_name not in team_roster:
+    if team_name not in team_data:
         return await interaction.response.send_message(f"❌ Team '{team_name}' not found.", ephemeral=True)
 
     if boss_name not in boss_drops:
@@ -333,7 +388,7 @@ async def remove_drop(interaction: discord.Interaction, boss_name: str, drop_nam
     logging.info(f"User {interaction.user.name} used /remove_drop: boss={boss_name}, drop={drop_name}")
     member_id = str(interaction.user.name)
     team_found = None
-    for team, members in team_roster.items():
+    for team, members in team_data.items():
         for member in members:
             if member["discord_user"] == member_id and member["role"] == "leader":
                 team_found = team
@@ -379,7 +434,7 @@ async def remove_drop_admin(interaction: discord.Interaction, team_name: str, bo
     if interaction.user.name not in ADMINS:
         return await interaction.response.send_message("You do not have permission to use this command.", ephemeral=True)
 
-    if team_name not in team_roster:
+    if team_name not in team_data:
         return await interaction.response.send_message(f"❌ Team '{team_name}' not found.", ephemeral=True)
 
     if boss_name in team_drop_counts[team_name] and drop_name in team_drop_counts[team_name][boss_name]:
@@ -468,7 +523,7 @@ async def team_stats(interaction: discord.Interaction):
     member_id = str(interaction.user.name)
 
     team_found = None
-    for team, members in team_roster.items():
+    for team, members in team_data.items():
         for member in members:
             if member["discord_user"] == member_id:
                 team_found = team
@@ -515,7 +570,7 @@ async def recalculate_points(interaction: discord.Interaction):
         return await interaction.response.send_message("You do not have permission to use this command.", ephemeral=True)
 
     global team_total_points
-    team_total_points = {team: 0 for team in team_roster}
+    team_total_points = {team: 0 for team in team_data}
 
     for team, bosses in team_drop_counts.items():
         for boss_name, drops in bosses.items():
@@ -551,8 +606,8 @@ async def reset_data(interaction: discord.Interaction):
         async def confirm_callback(interaction_button: discord.Interaction):
             if interaction_button.user == interaction.user:
                 global team_drop_counts, team_total_points
-                team_drop_counts = {team: {} for team in team_roster}
-                team_total_points = {team: 0 for team in team_roster}
+                team_drop_counts = {team: {} for team in team_data}
+                team_total_points = {team: 0 for team in team_data}
                 save_data()
                 await interaction_button.response.send_message("Data reset and bot restarted.", ephemeral=True)
                 await interaction.edit_original_response(view=None) #remove buttons
@@ -577,4 +632,5 @@ async def reset_data(interaction: discord.Interaction):
     else:
         await interaction.response.send_message("You don't have permission to reset the data.", ephemeral=True)
 
-client.run(os.environ.get("DISCORD_TOKEN"))
+# client.run(os.environ.get("DISCORD_TOKEN"))
+client.run(os.environ.get("DEV_DISCORD_TOKEN"))
