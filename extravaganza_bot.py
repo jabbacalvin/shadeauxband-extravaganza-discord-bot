@@ -57,6 +57,7 @@ class MyClient(commands.Bot):
 
     @tasks.loop(minutes=60.0)
     async def announce_team_scores(self):
+        logging.info("Automatic announce_team_scores triggered.")
         channel = self.get_channel(1349758783827476583)
         if channel:
             embeds = []
@@ -82,6 +83,7 @@ class MyClient(commands.Bot):
 
     @tasks.loop(minutes=60.0)
     async def send_graph(self):
+        logging.info("Automatic send_graph triggered.")
         channel = self.get_channel(1349758783827476583)
         if channel:
             try:
