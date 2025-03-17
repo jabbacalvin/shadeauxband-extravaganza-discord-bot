@@ -9,7 +9,7 @@
         },
         "Duke Sucellus": {
             "Chromium Ingot": 1,
-            "Awakener's Orb": 2,
+            "Awakener's Orb": 3,
             "Eye of the Duke": 1,
             "Virtus Mask": 1
         },
@@ -20,23 +20,57 @@
             "Any Unique": 2
         },
         "K'ril Tsutsaroth": {
-            "Any Godsword Shard": 1
+            "Any Godsword Shard": 1,
+            "Zamorakian Spear": 1,
+            "Steam Battlestaff": 1
         },
         "Vorkath": {
-            "Vorkath Head": 1
+            "Vorkath Head": 3
         },
         "Araxxor": {
             "Noxious Halberd Piece": 2,
             "Araxyte Fang": 1,
             "Araxyte Head": 1
+        },
+        "Cerberus": {
+            "Smouldering Stone": 1
+        },
+        "Grotesque Guardians": {
+            "Granite Maul": 1,
+            "Granite Gloves": 1,
+            "Granite Hammer": 1
+        },
+        "Amoxliatl": {
+            "Pendant of Ates": 4
+        },
+        "Tombs of Amascut (Expert)": {
+            "Osmumten's Fang": 1
+        },
+        "Chambers of Xeric (Scaled)": {
+            "Ancestral Robe Bottom": 1
+        },
+        "Chambers of Xeric (CM)": {
+            "Dragon Claws": 1
+        },
+        "The Leviathan": {
+            "Awakener's Orb": 1
         }
     },
     "Team Bandos": {
         "Tombs of Amascut": {
-            "Osmumten's Fang": 1
+            "Osmumten's Fang": 2
         },
         "The Leviathan": {
             "Awakener's Orb": 1
+        },
+        "Moons of Peril": {
+            "Any Unique": 2
+        },
+        "Barrows Chests": {
+            "Any Unique": 1
+        },
+        "Chambers of Xeric (Scaled)": {
+            "Twisted Buckler": 1
         }
     },
     "Team Saradomin": {
@@ -47,7 +81,7 @@
             "Archers Ring": 1
         },
         "Grotesque Guardians": {
-            "Granite Maul": 2,
+            "Granite Maul": 3,
             "Granite Gloves": 1
         },
         "Alchemical Hydra": {
@@ -55,6 +89,21 @@
         },
         "Vardorvis": {
             "Awakener's Orb": 1
+        },
+        "Kree'arra": {
+            "Armadyl Helmet": 1,
+            "Any Godsword Shard": 3,
+            "Armadyl Chestplate": 1
+        },
+        "Theatre of Blood (HMT)": {
+            "Holy Ornament Kit": 1
+        },
+        "Araxxor": {
+            "Araxyte Head": 1
+        },
+        "Tombs of Amascut": {
+            "Osmumten's Fang": 1,
+            "Lightbearer": 1
         }
     },
     "Team Zamorak": {
@@ -71,14 +120,15 @@
             "Jar": 1
         },
         "Duke Sucellus": {
-            "Awakener's Orb": 1
+            "Awakener's Orb": 2
         },
         "Araxxor": {
             "Araxyte Fang": 1,
-            "Araxyte Head": 1
+            "Araxyte Head": 1,
+            "Noxious Halberd Piece": 2
         },
         "Barrows Chests": {
-            "Any Unique": 2
+            "Any Unique": 3
         },
         "Kree'arra": {
             "Armadyl Hilt": 1,
@@ -94,7 +144,34 @@
             "Uncut Onyx": 1
         },
         "K'ril Tsutsaroth": {
-            "Zamorakian Spear": 1
+            "Zamorakian Spear": 1,
+            "Zamorak Hilt": 1
+        },
+        "Cerberus": {
+            "Primordial Crystal": 1
+        },
+        "Tormented Demons": {
+            "Burning Claw": 1
+        },
+        "Vardorvis": {
+            "Awakener's Orb": 2,
+            "Executioner's Axe Head": 1
+        },
+        "Vet'ion": {
+            "Skull of Vet'ion": 1
+        },
+        "General Graardor": {
+            "Bandos Tassets": 1
+        },
+        "The Nightmare": {
+            "Nightmare Staff": 1
+        },
+        "The Whisperer": {
+            "Awakener's Orb": 2,
+            "Chromium Ingot": 1
+        },
+        "Amoxliatl": {
+            "Glacial Temotli": 1
         }
     },
     "Team Zaros": {
@@ -105,7 +182,25 @@
             "Lightbearer": 1
         },
         "The Leviathan": {
-            "Awakener's Orb": 4
+            "Awakener's Orb": 5,
+            "Leviathan's Lure": 1
+        },
+        "General Graardor": {
+            "Any Godsword Shard": 1
+        },
+        "Zulrah": {
+            "Serpentine Visage": 1,
+            "Jar": 1,
+            "Uncut Onyx": 1
+        },
+        "Duke Sucellus": {
+            "Awakener's Orb": 1
+        },
+        "Chambers of Xeric (CM)": {
+            "Twisted Kit": 1
+        },
+        "Vardorvis": {
+            "Awakener's Orb": 1
         }
     }
 }

@@ -12,7 +12,7 @@ from datetime import datetime
 
 load_dotenv()
 
-ADMINS = ["smacksmackk", "titaniumbutter", "dufwha"]
+ADMINS = ["smacksmackk", "titaniumbutter", "dufwha", "iblametruth"]
 
 team_colors = {
     "Team Armadyl": discord.Color(0x1045c1),
@@ -172,7 +172,7 @@ async def boss_drops_all(interaction: discord.Interaction):
 
     embeds = []
     for boss_name, drops in boss_drops.items():
-        embed = discord.Embed(title=f"{boss_name} Drops", color=discord.Color.blue())
+        embed = discord.Embed(title=f"{boss_name}", color=discord.Color.blue())
 
         for drop_info in drops:
             drop_name = drop_info["drop"]
@@ -192,9 +192,9 @@ async def boss_drops_all(interaction: discord.Interaction):
     for i in range(0, len(embeds), 10):
         batch = embeds[i:i + 10]
         if i == 0:
-            await interaction.response.send_message(embeds=batch, ephemeral=True)
+            await interaction.response.send_message(embeds=batch)
         else:
-            await interaction.followup.send(embeds=batch, ephemeral=True)
+            await interaction.followup.send(embeds=batch)
 
 @client.tree.command(name="boss_drops", description="View drops and points for a boss.")
 @app_commands.autocomplete(boss_name=boss_autocomplete)
@@ -205,7 +205,7 @@ async def boss_drops_command(interaction: discord.Interaction, boss_name: str):
         return
 
     drops = boss_drops[boss_name]
-    embed = discord.Embed(title=f"{boss_name} Drops", color=discord.Color.blue())
+    embed = discord.Embed(title=f"{boss_name}", color=discord.Color.blue())
     for drop_info in drops:
         drop_name = drop_info["drop"]
         points = drop_info["points"]
